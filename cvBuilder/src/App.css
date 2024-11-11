@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+/* Flexbox for the parent container */
+.web-layout {          
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px;          
+}
+
+/* Resetting flex styles within individual components */
+.personal-info,
+.resume {
+  display: block; 
+}

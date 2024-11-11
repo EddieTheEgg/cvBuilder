@@ -1,0 +1,37 @@
+
+.info-inputs{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-inputs section{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.personalForm{
+    display:flex;
+    flex-direction: column;
+}
+
+section{
+    display:flex;
+    gap: 1px;
+}
+
+section div{
+    font-weight: 500;
+}
+
+section input{
+    min-width: 300px;
+    max-width: 500px;
+    resize: none;
+}
+
+.objective textarea{
+    resize: none;
+}
+

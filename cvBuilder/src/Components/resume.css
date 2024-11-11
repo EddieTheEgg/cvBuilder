@@ -1,0 +1,45 @@
+.root{
+    font-size: 16px;
+}
+
+.personal{
+    display:flex;
+    flex-direction: column;
+}
+
+.resume{
+    padding: 4rem;
+    padding-top: 1rem;
+    background-color: white;
+    color: black;
+    font-size: 1.8rem;
+    min-height: 8in;
+    width: clamp(5in, 5.5in, 6in);
+}
+
+.personal h3{
+    display: -webkit-box;          /* Enable legacy flexbox */
+    -webkit-box-pack: center;                 
+    white-space: nowrap;      
+    overflow: hidden;            
+    text-overflow: ellipsis; 
+    margin-bottom: 0; 
+}
+
+.personal .personal-details{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 100;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.personal .objective-description{
+    font-size: 1rem;
+    margin-top: 0.8rem;     
+    overflow: hidden;            
+    text-overflow: ellipsis; 
+
+}
+
+
