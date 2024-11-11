@@ -17,7 +17,9 @@ function Resume ({resume}){
                 <div>{resume.objective}</div>
             </section>
         </section>
-        <section>Experience</section>
+        <hr></hr>
+        <section className= "experience">Experience</section>
+        <hr></hr>
         <section>Education</section>
     </div>
     </>
