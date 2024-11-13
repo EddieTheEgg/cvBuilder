@@ -1,0 +1,87 @@
+.experience-form, .collapse-desc{
+    border: 1px solid #707070;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.collapse-desc{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+section input{
+    min-width: 300px;
+    resize: none;
+}
+
+.responsibilities textarea{
+    resize: none;
+}
+
+.collapse-desc{
+    display:flex;
+}
+
+.collapse-desc h4{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.collapse-desc h5 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0;            /* Optional: Remove left padding */
+    margin: 0;             /* Optional: Remove default margin */
+  }
+
+.collapse{
+    margin: 10px;
+}
+
+button.collapse {
+    width: 40px;          /* Set a fixed width for the button */
+    height: 40px;         /* Make height equal to width for a square */
+    display: flex;        /* Center content horizontally and vertically */
+    align-items: center;
+    justify-content: center;
+    border: none;         /* Optional: remove default border */
+    border-radius: 5px;  
+    margin-left: auto;
+}
+
+.delete-experience{
+    max-width: 170px;
+    box-sizing: border-box;
+}
+
+.experience-form section{
+    display:flex;
+    flex-direction: column;
+}
+
+.collapse-view-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsed-view{
+    display:flex;
+    margin-bottom:0.9rem;
+}
+
+.expand-button{
+    margin-left: auto;
+}
+
+
+.collapsed{
+    margin-bottom: 0.8rem;
+}
+
+.experience-form section{
+    margin-bottom: 0.7rem
+}
