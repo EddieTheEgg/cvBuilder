@@ -32,11 +32,6 @@ export default function PersonalInfo({currentInfo, updateInfo}){
             </div>
         </section>
        
-        
-
-
-
-
         </>
     )
 
