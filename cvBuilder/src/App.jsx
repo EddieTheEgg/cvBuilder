@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import PersonalInfo from './Components/personalInfo'
-import Resume from './Components/Resume'
-import './App.css'
+import { useState } from 'react';
+import PersonalInfo from './Components/personalInfo.jsx';
+import Resume from './Components/Resume';
+import Experience from './Components/experience.jsx';
+import './App.css';
 
 function App() {
   const [currentInfo, setInfo] = useState({
@@ -12,6 +13,9 @@ function App() {
     objective: "",
   });
 
+  const [experiences, setExperiences] = useState([]);
+
+  // Update function for personal information
   function updateInfo(e) {
     setInfo(prevInfo => ({
       ...prevInfo,
@@ -21,13 +25,16 @@ function App() {
 
   return (
     <>
-    <div className = "web-layout">
-      <PersonalInfo currentInfo = {currentInfo} updateInfo={updateInfo}/>
-      <Resume resume={currentInfo}/>
-    </div>
-     
+      <div className="web-layout">
+        <div className="input-fields">
+          <PersonalInfo currentInfo={currentInfo} updateInfo={updateInfo} />
+          <hr />
+          <Experience experiences={experiences} setExperiences={setExperiences} />
+        </div>
+        <Resume experiences={experiences} resume={currentInfo} />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
