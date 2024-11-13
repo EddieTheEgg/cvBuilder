@@ -12,6 +12,10 @@
   gap: 20px;          
 }
 
+.input-fields{
+  min-width: 400px;
+}
+
 /* Resetting flex styles within individual components */
 .personal-info,
 .resume {
