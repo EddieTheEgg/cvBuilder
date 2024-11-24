@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import PersonalInfo from './Components/personalInfo.jsx';
-import Resume from './Components/Resume';
+import Resume from './Components/resume.jsx';
 import Experience from './Components/experience.jsx';
+import Education from './Components/education.jsx';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   });
 
   const [experiences, setExperiences] = useState([]);
+  const [educations, setEducations] = useState([]);
 
   // Update function for personal information
   function updateInfo(e) {
@@ -31,8 +33,9 @@ function App() {
           <hr />
           <Experience experiences={experiences} setExperiences={setExperiences} />
           <hr />
+          <Education educations = {educations} setEducations={setEducations} />
         </div>
-        <Resume experiences={experiences} resume={currentInfo} />
+        <Resume experiences={experiences} educations= {educations} resume={currentInfo} />
       </div>
     </>
   );
