@@ -10,7 +10,7 @@ function convertDate(date) {
   });
 }
 
-function Resume({ resume, experiences }) {
+function Resume({ resume, experiences, educations }) {
   return (
     <>
       <div className="resume">
@@ -44,8 +44,6 @@ function Resume({ resume, experiences }) {
                     <p><i>{exp.position}</i></p>
                     <p>{exp.workLocation}</p>
                   </section>
-                 
-          
                   <ul className="job-description" >
                     {/* Add a check to ensure 'responsibilities' is defined */}
                     {(exp.responsibilities || '').split('\n').map((task, taskIndex) => (
@@ -61,11 +59,6 @@ function Resume({ resume, experiences }) {
         </section>
 
         <hr />
-
-        <section className="education">
-          <h4>Education</h4>
-          {/* You can add education details here in a similar way */}
-        </section>
       </div>
     </>
   );
