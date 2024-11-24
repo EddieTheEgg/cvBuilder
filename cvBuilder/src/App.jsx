@@ -21,8 +21,8 @@ function App() {
       ...prevInfo,
       [e.target.name]: e.target.value,
     }));
-  }
 
+  }
   return (
     <>
       <div className="web-layout">
@@ -30,6 +30,7 @@ function App() {
           <PersonalInfo currentInfo={currentInfo} updateInfo={updateInfo} />
           <hr />
           <Experience experiences={experiences} setExperiences={setExperiences} />
+          <hr />
         </div>
         <Resume experiences={experiences} resume={currentInfo} />
       </div>
@@ -38,3 +39,5 @@ function App() {
 }
 
 export default App;
+
+

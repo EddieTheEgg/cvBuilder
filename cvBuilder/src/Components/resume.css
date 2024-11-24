@@ -79,7 +79,12 @@ hr{
     flex-direction: column;
 }
 
-
+ul {
+    list-style: none; /* Removes bullets */
+    margin: 0;        /* Removes default margin */
+    padding: 0;       /* Removes default padding */
+  }
+  
 
 .experience h4, .company-row h5, .company-row p{
     margin-bottom: 0;
@@ -115,8 +120,58 @@ hr{
 .specific-desc{
     font-size: 1rem;
 }
+
+.experience-form section{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.experience-form section textarea{
+    resize: none;
+}
+
+.experience-list{
+  padding-left: 0px;
+}
+
+.collapse-view-details{
+    display:flex;
+    flex-direction: column;
+}
+
+.collapse-view-details:nth-child(2){
+    font-size: 0.5rem;
+} 
   
+.collapsed-view{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
 
+.expand-button{
+    width: 100%;
+}
 
+.delete-button{
+    margin-top : 0.3rem;
+}
+
+.expanded {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.add-experience-button{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    width: 100%;
+}
+
+.collapsed{
+    margin-bottom: 0.3rem;
+}
 
 
