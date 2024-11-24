@@ -2,6 +2,7 @@
     border: 1px solid #707070;
     border-radius: 10px;
     list-style-type: none;
+ 
     padding: 20px;
 }
 
@@ -32,11 +33,6 @@ section input{
     margin-top: 0;
 }
 
-ul {
-    list-style-type: none; /* Removes the bullet points */
-    padding: 0;            /* Optional: Remove left padding */
-    margin: 0;             /* Optional: Remove default margin */
-  }
 
 .collapse{
     margin: 10px;
@@ -83,6 +79,23 @@ button.collapse {
 }
 
 .experience-form section{
-    margin-bottom: 0.7rem
+    margin-bottom: 0.7;
+    display:flex;
+    flex-direction: column;
 }
 
+.expanded{
+    list-style-type: none;
+}
+
+.experience-form {
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+  
