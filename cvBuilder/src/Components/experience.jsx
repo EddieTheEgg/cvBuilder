@@ -42,13 +42,13 @@ function Experience({ experiences, setExperiences }) {
   return (
     <div className="experience-container">
       <h2>Professional Experience</h2>
-      <ul>
+      <ul className="experience-list">
         {experiences.map((experience, index) => (
           <li key={experience.id} className={experience.expanded ? "expanded" : "collapsed"}>
             {experience.expanded ? (
               <div className="experience-form">
                 <section>
-                  <label>Company:</label>
+                  <label>Company</label>
                   <input
                     type="text"
                     name="company"
@@ -57,7 +57,7 @@ function Experience({ experiences, setExperiences }) {
                   />
                 </section>
                 <section>
-                  <label>Position/Title:</label>
+                  <label>Position/Title</label>
                   <input
                     type="text"
                     name="position"
@@ -68,7 +68,7 @@ function Experience({ experiences, setExperiences }) {
 
 
               <section>
-                <label>Location:</label>
+                <label>Location</label>
                   <input
                     type="text"
                     name="workLocation"
@@ -77,7 +77,7 @@ function Experience({ experiences, setExperiences }) {
                   />
               </section>
               <section>
-              <label>Start Date:</label>
+              <label>Start Date</label>
                 <input
                   type="date"
                   name="startDate"
@@ -87,7 +87,7 @@ function Experience({ experiences, setExperiences }) {
               </section>
 
               <section>
-                <label>End Date:</label>
+                <label>End Date</label>
                   <input
                     type="date"
                     name="endDate"
@@ -96,7 +96,7 @@ function Experience({ experiences, setExperiences }) {
                   />
               </section>
               <section>
-                <label>Responsibilities:</label>
+                <label>Responsibilities</label>
                   <textarea
                     rows= "5"
                     name="responsibilities"
@@ -106,7 +106,7 @@ function Experience({ experiences, setExperiences }) {
                   />
               </section>
               <section className= "edit-experience-buttons">
-                <button onClick={() => handleRemove(index)}>Delete</button>
+                <button className = "delete-button" onClick={() => handleRemove(index)}>Delete</button>
                 <button onClick={() => toggleExpand(index)}>Collapse ▲</button>
               </section>
               </div>
