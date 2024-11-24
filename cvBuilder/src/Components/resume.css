@@ -1,5 +1,5 @@
 .root{
-    font-size: 16px;
+    font-size: 8px;
 }
 
 .personal{
@@ -8,14 +8,13 @@
 }
 
 .resume{
-    padding: 4rem;
-    padding-top: 1rem;
+    padding: 0 40px;
     background-color: white;
     color: black;
     font-size: 1.8rem;
     min-height: 8in;
-    max-height: 8in;
-    width: clamp(5in, 5.5in, 6in);
+    max-height: 12in;
+    width: clamp(5in, 6in, 7in);
 }
 
 .personal h3{
@@ -52,5 +51,72 @@
 hr{
     margin-bottom: 0.5rem;
 }
+
+.experience{
+    display: flex;
+    flex-direction: column;
+}
+
+.company-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.company-row h5, .company-row p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item{
+    width: 100%;
+}
+
+.experience-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.experience h4, .company-row h5, .company-row p{
+    margin-bottom: 0;
+}
+
+.company-row p{
+    font-size: 1rem;
+}
+
+.position-row {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.position-row p{
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.job-description{
+    margin-top: 0;
+    padding-left: 1rem;
+  }
+
+.specific-desc::marker {
+    font-size: 0.8em; /* Adjust the size of the bullet */
+    color: gray; /* Optional: Change bullet color */
+}
+
+.specific-desc{
+    font-size: 1rem;
+}
+  
+
+
 
 

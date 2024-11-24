@@ -1,5 +1,15 @@
 import './resume.css';
 
+function convertDate(date) {
+  if (!date) return '';
+  
+  const dateObj = new Date(date);
+  return dateObj.toLocaleDateString('en-US', {
+    month: 'long',
+    year: 'numeric'
+  });
+}
+
 function Resume({ resume, experiences }) {
   return (
     <>
@@ -26,14 +36,20 @@ function Resume({ resume, experiences }) {
             {experiences.length > 0 ? (
               experiences.map((exp, index) => (
                 <div key={exp.id || index} className="experience-item">
-                  <h5>{exp.company}s</h5>
-                  <p>{exp.position}</p>
-                  <p>{exp.location}</p>
-                  <p>{exp.startDate} - {exp.endDate}</p>
-                  <ul>
+                  <section className="company-row">
+                    <h5>{exp.company}</h5>
+                    <p>{convertDate(exp.startDate)} - {convertDate(exp.endDate)}</p>
+                  </section>
+                  <section className="position-row">
+                    <p><i>{exp.position}</i></p>
+                    <p>{exp.workLocation}</p>
+                  </section>
+                 
+          
+                  <ul className="job-description" >
                     {/* Add a check to ensure 'responsibilities' is defined */}
                     {(exp.responsibilities || '').split('\n').map((task, taskIndex) => (
-                      <li key={taskIndex}>{task}</li>
+                      <li className ="specific-desc" key={taskIndex}>{task}</li>
                     ))}
                   </ul>
                 </div>
