@@ -46,6 +46,8 @@
     font-weight: 700;
     font-size:1.3rem;
     margin-top: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 hr{

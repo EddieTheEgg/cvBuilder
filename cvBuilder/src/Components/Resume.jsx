@@ -45,7 +45,6 @@ function Resume({ resume, experiences, educations }) {
                     <p>{exp.workLocation}</p>
                   </section>
                   <ul className="job-description" >
-                    {/* Add a check to ensure 'responsibilities' is defined */}
                     {(exp.responsibilities || '').split('\n').map((task, taskIndex) => (
                       <li className ="specific-desc" key={taskIndex}>{task}</li>
                     ))}
@@ -59,6 +58,32 @@ function Resume({ resume, experiences, educations }) {
         </section>
 
         <hr />
+        
+        {/* Educational Studies Section*/}
+        <section className="education-section">
+          <section className ="education">
+            <h4>Education</h4>
+            {educations.length > 0 ? (
+              educations.map((edu, index) => (
+                <div key={edu.id || index} className = "education-item">
+                  <section className = "school-row">
+                    <h5>{edu.school}</h5>
+                    <p>{convertDate(edu.gradDate)}</p>
+                  </section>
+                  <section>
+                    <p><i>{edu.degree}</i></p>
+                    <p>{edu.location}</p>
+                  </section>
+                </div>
+              ))
+            ) : (
+              <p>No Education added.</p>
+            )}
+          </section>
+        </section>
+
+
+       
       </div>
     </>
   );
