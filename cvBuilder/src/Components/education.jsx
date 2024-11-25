@@ -72,7 +72,7 @@ function Education({educations, setEducations }){
                                 <section>
                                     <label>Graduation/Expected Date</label>
                                     <input
-                                       type="text" 
+                                       type="date" 
                                        name="gradDate"
                                        value={education.gradDate || ""}
                                        onChange = {(e) => handleChange (index, e)}
