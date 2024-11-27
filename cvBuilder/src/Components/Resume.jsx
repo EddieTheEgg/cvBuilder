@@ -52,7 +52,7 @@ function Resume({ resume, experiences, educations }) {
                 </div>
               ))
             ) : (
-              <p>No experiences added yet.</p>
+              <p className = "no-experience">No experiences added yet.</p>
             )}
           </section>
         </section>
@@ -68,16 +68,16 @@ function Resume({ resume, experiences, educations }) {
                 <div key={edu.id || index} className = "education-item">
                   <section className = "school-row">
                     <h5>{edu.school}</h5>
-                    <p>{convertDate(edu.gradDate)}</p>
+                    <div>{convertDate(edu.gradDate)}</div>
                   </section>
-                  <section>
+                  <section className = "degree-row">
                     <p><i>{edu.degree}</i></p>
                     <p>{edu.location}</p>
                   </section>
                 </div>
               ))
             ) : (
-              <p>No Education added.</p>
+              <p className= "no-education">No Education added.</p>
             )}
           </section>
         </section>

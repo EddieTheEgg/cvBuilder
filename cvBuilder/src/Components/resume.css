@@ -59,23 +59,21 @@ hr{
     flex-direction: column;
 }
 
-.company-row {
+.company-row, .school-row {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
 }
 
-.company-row h5, .company-row p {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-}
+
+
 
 .experience-item{
     width: 100%;
 }
 
-.experience-section {
+.experience-section, .education-section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -92,8 +90,11 @@ ul {
     margin-bottom: 0;
 }
 
-.company-row p{
+.company-row p, .school-row div{
     font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
 }
 
 .position-row {
@@ -176,8 +177,35 @@ ul {
     margin-bottom: 0.3rem;
 }
 
-.experience h4{
+.experience h4, .education h4{
     margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
 }
+
+
+.no-education, .no-experience{
+    margin-top: 0.3rem;
+}
+
+.degree-row{
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.school-row{
+    margin-bottom: 0;
+}
+
+.school-row h5{
+    margin-bottom: 0;
+}
+.degree-row p{
+    margin-top: 0;
+}
+
+
+
+
 
 
