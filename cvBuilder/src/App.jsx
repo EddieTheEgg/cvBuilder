@@ -8,15 +8,15 @@ import './App.css';
 
 function App() {
   const [currentInfo, setInfo] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    location: "",
-    objective: "",
+    name: example.name,
+    email: example.email,
+    phone: example.phone,
+    location: example.location,
+    objective: example.objective,
   });
 
-  const [experiences, setExperiences] = useState([]);
-  const [educations, setEducations] = useState([]);
+  const [experiences, setExperiences] = useState(example.experience);
+  const [educations, setEducations] = useState(example.education);
 
   // Update function for personal information
   function updateInfo(e) {

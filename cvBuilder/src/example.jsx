@@ -10,9 +10,9 @@ const example = {
         {
             company: "ABC Company",
             position: "Web Developer",
-            workLocation: "Toronto, ON",
-            startDate: "September 2020",
-            endDate: "November 2024",
+            workLocation: "Boston, MA",
+            startDate: "09/10/2020",
+            endDate: "11/28/2024",
             responsibilities: "*Create functional web applications using JavaScript, React, and HTML/CSS skills \n*Implement unit test driven design using Jest to improve productivity and specification\n*Enforce reactive and scalable design techniques to accommodate for web accessibility",
             id: crypto.randomUUID,
             expanded: true,
@@ -21,10 +21,10 @@ const example = {
 
     education: [
         {
-            school: "Carleton University",
-            degree: "B.Eng, Electrical Engineer",
-            location: "Ottawa, ON",
-            gradDate: "May 2020",
+            school: "Northeastern University",
+            degree: "Computer Science BS, Minor in Mathematics",
+            location: "Boston, MA",
+            gradDate: "05/20/2020",
             id: crypto.randomUUID,
             expanded: true,
         },
