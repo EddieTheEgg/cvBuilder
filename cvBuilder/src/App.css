@@ -18,14 +18,12 @@
 .input-fields{
   flex: 1;
   min-width: 400px;
-  margin-left: 2rem;
 }
 
 /* Resetting flex styles within individual components */
 .personal-info,
 .resume {
   display: block;
-  margin-right: 2rem;
 }
 
 @media (max-width: 1250px){
