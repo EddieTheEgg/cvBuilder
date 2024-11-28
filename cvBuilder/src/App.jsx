@@ -3,6 +3,7 @@ import PersonalInfo from './Components/personalInfo.jsx';
 import Resume from './Components/Resume.jsx';
 import Experience from './Components/experience.jsx';
 import Education from './Components/education.jsx';
+import example from './example.jsx';
 import './App.css';
 
 function App() {
