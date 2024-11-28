@@ -13,17 +13,20 @@
     color: black;
     font-size: 1.8rem;
     min-height: 8in;
-    max-height: 12in;
+    max-height: 13in;
     width: clamp(6in, 7in, 8in);
 }
 
-.personal h3{
-    display: -webkit-box;          /* Enable legacy flexbox */
-    -webkit-box-pack: center;                 
-    white-space: nowrap;      
-    overflow: hidden;            
-    text-overflow: ellipsis; 
+.personal h3, .degree-row p:nth-child(1){
+    display: block; 
+    white-space: normal;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
     margin-bottom: 0; 
+}
+
+.personal h3{
+    align-self: center;
 }
 
 .personal .personal-details{
@@ -37,8 +40,10 @@
 .personal .objective-description{
     font-size: 0.8rem;
     margin-top: 0.8rem;     
-    overflow: hidden;            
-    text-overflow: ellipsis; 
+    display: block; 
+    white-space: normal;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
 }
 
 
@@ -48,6 +53,7 @@
     margin-top: 0;
     display: flex;
     flex-direction: column;
+    padding-bottom: 1rem;
 }
 
 hr{
@@ -81,9 +87,9 @@ hr{
 }
 
 ul {
-    list-style: none; /* Removes bullets */
-    margin: 0;        /* Removes default margin */
-    padding: 0;       /* Removes default padding */
+    list-style: none; 
+    margin: 0;       
+    padding: 0;       
   }
   
 
@@ -118,7 +124,7 @@ ul {
   }
 
 .specific-desc::marker {
-    font-size: 0.9em; /* Adjust the size of the bullet */
+    font-size: 0.9rem; /* Adjust the size of the bullet */
     color: gray; /* Optional: Change bullet color */
 }
 

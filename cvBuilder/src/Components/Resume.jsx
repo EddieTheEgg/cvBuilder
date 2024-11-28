@@ -10,6 +10,19 @@ function convertDate(date) {
   });
 }
 
+const DescriptionToBullets = ({description}) => {
+  const formatDescription = (text) => {
+    const lines = text.split('\n'); //Splits the descriptions into seperate lines
+
+    return lines.map ((line, index) => {
+      if (line.trim().startsWith('*')){
+        return <li key={index}>{line.trim().substring(1).trim()}</li>
+      }
+      return <p key={index}>{line}</p>
+    })
+  }
+}
+
 function Resume({ resume, experiences, educations }) {
   return (
     <>
