@@ -14,7 +14,7 @@
     font-size: 1.8rem;
     min-height: 8in;
     max-height: 12in;
-    width: clamp(5in, 6in, 7in);
+    width: clamp(6in, 7in, 8in);
 }
 
 .personal h3{
@@ -64,6 +64,7 @@ hr{
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
+    margin-bottom: 0;
 }
 
 
@@ -86,14 +87,15 @@ ul {
   }
   
 
-.experience h4, .company-row h5, .company-row p{
+.experience h4, .company-row h5, .company-row p, .position-row p, .school-row h5{
     margin-bottom: 0;
+    margin-top: 0;
 }
 
-.company-row p, .school-row div{
-    font-size: 1rem;
+.company-row p, .school-row div, .degree-row p{
+    font-size: 0.9rem;
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     white-space: nowrap;
 }
 
@@ -106,7 +108,7 @@ ul {
 }
 
 .position-row p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 0;
 }
 
@@ -116,12 +118,12 @@ ul {
   }
 
 .specific-desc::marker {
-    font-size: 0.8em; /* Adjust the size of the bullet */
+    font-size: 0.9em; /* Adjust the size of the bullet */
     color: gray; /* Optional: Change bullet color */
 }
 
 .specific-desc{
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .experience-form section, .education-form section{
