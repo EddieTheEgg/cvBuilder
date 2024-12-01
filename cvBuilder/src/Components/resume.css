@@ -12,8 +12,8 @@
     background-color: white;
     color: black;
     font-size: 1.8rem;
-    min-height: 8in;
-    max-height: 13in;
+    min-height: 8.3in;
+    max-height: 11.7in;
     width: clamp(6in, 7in, 8in);
 }
 
