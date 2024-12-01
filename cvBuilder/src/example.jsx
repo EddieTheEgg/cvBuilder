@@ -3,7 +3,7 @@ const example = {
     email: "email@address.com",
     phone: "(123) 456-7890",
     location: "Boston, MA",
-    objective: "I wanna be the very best like no one ever was. To catch them is my real test, to train them is my cause. I will travel across the land searching far and wide. Each Pokémon to understand the power that's inside.",
+    objective: "I wanna be the very best like no one ever was. To be the best requires the most optimal skills, the talent, the responsibilities.",
 
 
     experience: [
